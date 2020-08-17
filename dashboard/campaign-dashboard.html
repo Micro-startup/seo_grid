@@ -116,7 +116,7 @@
 
             <div class="" id="topNav">
               <!--collapse navbar-collapse-->
-              <div class="ml-auto my-2 my-lg-0">
+              <div class="ml-auto my-0">
                 <a href="#" class="notification-section mr-4 d-inline-block">
                   <img src="./assets/images/bell-icon.svg" alt="" />
                   <span
@@ -126,31 +126,69 @@
                   </span>
                 </a>
 
-                <a href="#" class="d-inline-block avatar-section">
-                  <span
-                    class="d-inline-block"
-                    style="
-                      height: 40px;
-                      width: 40px;
-                      border-radius: 50%;
-                      vertical-align: middle;
-                    "
+                <span class="d-inline-block avatar-section">
+                  <a id="dropdownBtn" href="#">
+                    <span
+                      class="d-inline-block"
+                      style="
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                      "
+                    >
+                      <img
+                        style="height: 100%; width: 100%; object-fit: cover;"
+                        src="./assets/images/avatar.png"
+                        alt=""
+                      />
+                    </span>
+                    <span class="avatar-name">
+                      Mark Spencer
+                    </span>
+                    <span
+                      class="iconify caret"
+                      data-icon="carbon:caret-down"
+                      data-inline="false"
+                    ></span>
+                  </a>
+                  <div
+                    class="dropdown-holder closed bg-white position-absolute"
                   >
-                    <img
-                      style="height: 100%; width: 100%; object-fit: cover;"
-                      src="./assets/images/avatar.png"
-                      alt=""
-                    />
-                  </span>
-                  <span class="avatar-name">
-                    Mark Spencer
-                  </span>
-                  <span
-                    class="iconify caret"
-                    data-icon="carbon:caret-down"
-                    data-inline="false"
-                  ></span>
-                </a>
+                    <nav class="dropdown-nav d-flex flex-column px-4">
+                      <a class="dropdown-nav-link active" href="#"
+                        ><span
+                          class="iconify"
+                          data-icon="ant-design:user-outlined"
+                          data-inline="false"
+                        ></span
+                        ><span class="dropdown-nav-link__desc">
+                          My Profile
+                        </span>
+                      </a>
+                      <a class="dropdown-nav-link" href="#"
+                        ><span
+                          class="iconify"
+                          data-icon="clarity:settings-line"
+                          data-inline="false"
+                        ></span>
+                        <span class="dropdown-nav-link__desc">
+                          Subscription
+                        </span>
+                      </a>
+                      <a class="dropdown-nav-link" href="#"
+                        ><span
+                          class="iconify"
+                          data-icon="carbon:logout"
+                          data-inline="false"
+                        ></span>
+                        <span class="dropdown-nav-link__desc danger">
+                          Logout
+                        </span>
+                      </a>
+                    </nav>
+                  </div>
+                </span>
               </div>
             </div>
           </div>
