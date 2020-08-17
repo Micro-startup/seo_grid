@@ -91,7 +91,18 @@ https://github.com/silviomoreto/bootstrap-select/issues/1135
 
    /* Password settings style start */
 
+.input-group-text {
+  background-color: white;
 
+}
+
+.pwordeye, .pwordeye1, .pwordeye2 {
+ fill: #B3B3B3;
+}
+
+.js-password_input, .js-password_input1, .js-password_input2 {
+  border-right: none !important;
+}
 
 
    /* Password settings style start */
