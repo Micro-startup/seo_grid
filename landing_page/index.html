@@ -5,117 +5,262 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <!-- scroll reveal animation cdn -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
     integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+<!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
+  <!-- custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
   <title>Crenly | SEO Grid</title>
 </head>
 
 <body>
-  <!---------------header start------------------->
 
-  <header class="container-fluid d-flex justify-content-between pt-4 px-5">
-    <h2 class="brand-logo mb-0">crenly<span class="brand-logo__dot">.</span></h2>
-    <div>
-      <button class="login px-4 py-3 mr-3">LOG IN</button>
-      <button class="free-trial px-4 py-3">START FREE TRIAL</button>
+  <!--navbar start-->
+  <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-white px-md-5">
+    <a id="brand-icon" class="navbar-brand" href="#">crenly<span class="navbar-brand__dot">.</span>
+    </a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#features">FEATURES<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#process">HOW IT WORKS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">PRICING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#login">LOGIN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link signup" href="#signup">SIGN UP</a>
+        </li>
+      </ul>
     </div>
-  </header>
-  <!---------------header end------------------->
+  </nav>
+  <!---------------navbar end------------------->
   <!---------------intro start------------------->
-  <div class="row container-fluid pl-5 intro pt-5 mx-0">
-    <div class="col pl-5">
+  <div class="row container-fluid pl-md-5 intro pt-5 mx-0 mt-5">
+    <div class="col-12 col-md-6 pl-md-5 my-auto">
       <h1 class="intro__title">The Best Keyword <br> SEO Grid Tool.</h1>
-      <p class="intro__description">Track your keywords. Stay on top of<br> Google’s search results.</p>
-      <button class="free-trial px-4 py-3 mt-5">START FREE TRIAL</button>
+      <p class="intro__description">Track your keywords. Stay on top of Google’s search results.</p>
+      <button class="free-trial px-3 py-2 px-md-5 py-md-3 mt-md-5">Get Started</button>
+      <p class="d-inline ml-4 text-red"><svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M10.206 6.99999L1.5 1.94948V12.0505L10.206 6.99999ZM11.394 5.95599C11.5779 6.06127 11.7307 6.21327 11.837 6.3966C11.9433 6.57993 11.9993 6.78808 11.9993 6.99999C11.9993 7.21189 11.9433 7.42004 11.837 7.60337C11.7307 7.7867 11.5779 7.9387 11.394 8.04399L1.8495 13.582C1.0695 14.035 0 13.5175 0 12.538V1.46199C0 0.482485 1.0695 -0.035015 1.8495 0.417985L11.394 5.95599Z"
+            fill="#FF3737" />
+        </svg>
+        How it Works</p>
     </div>
-    <div class="col">
-      <img class="img-fluid" src="assets/img/introimg.png">
+    <div class="col mt-4">
+      <img class="img-fluid intro__img" src="assets/img/womanonpc.png">
     </div>
   </div>
   <!---------------intro end------------------->
-  <img class="img-fluid left-ellipse mt-n5" src="assets/img/Ellipseleft.png">
-  <!---------------How it works start------------------->
-  <h3 class="section__heading operation">How Crenly Works<span class="brand-logo__dot">.</span></h3>
-  <p class="section__description">Crenly helps you monitor bla bla bla bla bla</p>
-  <div class="row container-fluid step1 mx-0 px-5">
-    <div class="col">
-      <img class="img-fluid" src="assets/img/researching.png">
-    </div>
-    <div class="col d-flex align-items-center">
-      <div>
-        <h4 class="step__title text-right mb-5">Create a Campaign</h4>
-        <p class="step__description text-right">Stay creative with your marketing campaigns & content. SEMrush will take
-          care of the data. 45+ marketing tools,
-          18.8B keywords, 717M domains & much more. Get a free SEMrush trial! 729+ million domains. 18+ billion
-          keywords.
-          23+ trillion backlinks.</p>
+  <!--------------- sub-intro start------------------->
+  <h3 class="section__heading mt-5">Stay Visible On the Internet<br>Let <span class="text-red">Crenly</span> help you.
+  </h3>
+  <img class="img-fluid d-block mx-auto px-5 campdash" src="assets/img/crenlydashb.png" alt="crenly dashboard screenshot">
+  <!--------------- sub-intro end------------------->
+  <!--------------- how it works start------------------->
+  <div id="process" class="steps pt-md-5 pt-3 px-md-5 px-3 mt-md-n5 mt-n4">
+    <h3 class="section__heading text-white text-left mt-4">How Crenly Works</h3>
+    <div class="steps__slider">
+      <div class="d-sm-flex justify-content-end">
+        <div class="align-self-center col-5 col-sm-4 col-md-4">
+          <h5 class="steps__title">Create a Campaign</h5>
+          <p class="steps__description">Input details of your website, Crenly will take care of the data.</p>
+        </div>
+        <div class=" col-sm-8">
+          <img class="img-fluid" src="assets/img/createcampaign.png" alt="">
+        </div>
+      </div>
+      <div class="d-sm-flex justify-content-end">
+        <div class="align-self-center col-5 col-sm-4 col-md-4">
+          <h5 class="steps__title">Enter Keyword</h5>
+          <p class="steps__description">Enter Keyword</p>
+        </div>
+        <div class=" col-sm-8">
+          <img class="img-fluid" src="assets/img/keyword.png" alt="">
+        </div>
+      </div>
+      <div class="d-sm-flex justify-content-end">
+        <div class="align-self-center col-5 col-sm-4 col-md-4">
+          <h5 class="steps__title">Monitor Ranking</h5>
+          <p class="steps__description">Enter Keyword</p>
+        </div>
+        <div class=" col-sm-8">
+          <img class="img-fluid" src="assets/img/monitorranking.png" alt="">
+        </div>
+      </div>
+      <div class="d-sm-flex justify-content-end">
+        <div class="align-self-center col-5 col-sm-4 col-md-4">
+          <h5 class="steps__title">Compare with Competitors</h5>
+          <p class="steps__description">Enter Keyword</p>
+        </div>
+        <div class=" col-sm-8">
+          <img class="img-fluid" src="assets/img/compare.png" alt="">
+        </div>
       </div>
     </div>
-    <div class="col-1 text-center">
-      <p class="step__number pt-1">1</p>
-    </div>
   </div>
-  <div class="row container-fluid step2 d-flex flex-row-reverse mx-0 px-5">
-    <div class="col">
-      <img class="img-fluid" src="assets/img/ladyraisedhand.png">
-    </div>
-    <div class="col d-flex align-items-center">  
-      <div>
-        <h4 class="step__title text-left mb-5">Enter Keyword</h4>
-        <p class="step__description text-left">Stay creative with your marketing campaigns & content. SEMrush will take
-          care of the data. 45+ marketing tools,
-          18.8B keywords, 717M domains & much more. Get a free SEMrush trial! 729+ million domains. 18+ billion
-          keywords.
-          23+ trillion backlinks.</p>
-      </div>
-    </div>
-    <div class="col-1 text-center">
-      <p class="step__number pt-1">2</p>
-    </div>
-  </div>
-  <div class="row container-fluid step1 mx-0 px-5">
-    <div class="col">
-      <img class="img-fluid" src="assets/img/manobserve.png">
-    </div>
-    <div class="col d-flex align-items-center">
-      <div>
-        <h4 class="step__title text-right mb-5">Monitor SEO</h4>
-        <p class="step__description text-right">Stay creative with your marketing campaigns & content. SEMrush will take
-          care of the data. 45+ marketing tools,
-          18.8B keywords, 717M domains & much more. Get a free SEMrush trial! 729+ million domains. 18+ billion
-          keywords.
-          23+ trillion backlinks.</p>
-      </div>
-    </div>
-    <div class="col-1 text-center">
-      <p class="step__number pt-1">3</p>
-    </div>
-  </div>
-  <div class="row container-fluid step2 d-flex flex-row-reverse mx-0 px-5">
-    <div class="col">
-      <img class="img-fluid" src="assets/img/pushnotif.png">
-    </div>
-    <div class="col d-flex align-items-center">  
-      <div>
-        <h4 class="step__title text-left mb-5">Real-time Notification</h4>
-        <p class="step__description text-left">Stay creative with your marketing campaigns & content. SEMrush will take
-          care of the data. 45+ marketing tools,
-          18.8B keywords, 717M domains & much more. Get a free SEMrush trial! 729+ million domains. 18+ billion
-          keywords.
-          23+ trillion backlinks.</p>
-      </div>
-    </div>
-    <div class="col-1 text-center">
-      <p class="step__number pt-1">4</p>
-    </div>
-  </div>
+  <!--------------- how it works end------------------->
+  <!--------------- pricing start------------------->
+  <a class="anchor" id="pricing"></a>
+  <div class="container-fluid mt-3">
+    <h3 class="section__heading mb-3">Find the plan that’s right for you</h3>
+    <!--------------- cards start------------------->
+    <div class="row card-container justify-content-around">
+      <div class="card mb-4 pb-4 col-xs-12 box-shadow sr-left">
 
+        <h4 class="price-plan">Free</h4>
+        <p class="plan-clients">For Starters</p>
 
-  <!----------------How it works end------------------->
+        <div class="card-body ">
+          <h5 class="card-title pricing-card-title"><sup class="text-muted">US</sup>$0 </h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="text-muted">Per user Per Month</li>
+          </ul>
+          <button type="button" class="mt-5 btn btn-lg btn-primary d-block mx-auto btn-start btn-start-red px-4">Get
+            Started</button>
+        </div>
+        <hr style="width: 84%; border:1px solid #CCCCCC;" class="mx-auto">
+        <p class="ml-4" style="font-weight: 600;">Top Features</p>
+        <p class="text-muted text-left ml-4"><svg class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 20C10.6059 20.0012 10.2155 19.9241 9.85139 19.7732C9.4873 19.6223 9.15678 19.4006 8.879 19.121L4.879 15.121C4.312 14.555 4 13.801 4 13C4 12.199 4.312 11.445 4.879 10.878C6.012 9.74505 7.988 9.74505 9.121 10.878L10.309 12.066L13.378 6.54305C13.6658 6.02396 14.1011 5.60193 14.6289 5.3304C15.1567 5.05887 15.7532 4.95006 16.3428 5.01773C16.9325 5.0854 17.4888 5.32651 17.9413 5.71055C18.3939 6.09458 18.7223 6.60426 18.885 7.17505C18.9946 7.55387 19.0278 7.9507 18.9826 8.34246C18.9375 8.73422 18.8149 9.11309 18.622 9.45705L13.622 18.457C13.361 18.9236 12.9806 19.3124 12.5199 19.5835C12.0591 19.8547 11.5346 19.9984 11 20ZM7 12C6.732 12 6.482 12.104 6.293 12.293C6.104 12.482 6 12.732 6 13C6 13.268 6.104 13.518 6.293 13.707L10.293 17.707C10.4026 17.8161 10.536 17.8983 10.6826 17.9472C10.8293 17.9961 10.9853 18.0104 11.1384 17.989C11.2915 17.9676 11.4375 17.9111 11.5652 17.8238C11.6928 17.7366 11.7985 17.621 11.874 17.486L16.874 8.48605C16.9382 8.37148 16.979 8.24532 16.9941 8.11486C17.0092 7.98441 16.9983 7.85225 16.962 7.72605C16.9261 7.59931 16.8654 7.48099 16.7833 7.37797C16.7013 7.27496 16.5995 7.18932 16.484 7.12605C16.2517 7.00204 15.9802 6.97319 15.727 7.04559C15.4738 7.11798 15.2587 7.28597 15.127 7.51405L10.77 15.355L7.708 12.293C7.61518 12.1999 7.50482 12.126 7.3833 12.0757C7.26179 12.0255 7.13151 11.9997 7 12Z"
+              fill="#00B071" />
+            <circle cx="12" cy="12" r="11.5" stroke="#00B071" />
+          </svg>Up to 10 campaigns</p>
+        <p class="text-muted text-left ml-4"><svg class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 20C10.6059 20.0012 10.2155 19.9241 9.85139 19.7732C9.4873 19.6223 9.15678 19.4006 8.879 19.121L4.879 15.121C4.312 14.555 4 13.801 4 13C4 12.199 4.312 11.445 4.879 10.878C6.012 9.74505 7.988 9.74505 9.121 10.878L10.309 12.066L13.378 6.54305C13.6658 6.02396 14.1011 5.60193 14.6289 5.3304C15.1567 5.05887 15.7532 4.95006 16.3428 5.01773C16.9325 5.0854 17.4888 5.32651 17.9413 5.71055C18.3939 6.09458 18.7223 6.60426 18.885 7.17505C18.9946 7.55387 19.0278 7.9507 18.9826 8.34246C18.9375 8.73422 18.8149 9.11309 18.622 9.45705L13.622 18.457C13.361 18.9236 12.9806 19.3124 12.5199 19.5835C12.0591 19.8547 11.5346 19.9984 11 20ZM7 12C6.732 12 6.482 12.104 6.293 12.293C6.104 12.482 6 12.732 6 13C6 13.268 6.104 13.518 6.293 13.707L10.293 17.707C10.4026 17.8161 10.536 17.8983 10.6826 17.9472C10.8293 17.9961 10.9853 18.0104 11.1384 17.989C11.2915 17.9676 11.4375 17.9111 11.5652 17.8238C11.6928 17.7366 11.7985 17.621 11.874 17.486L16.874 8.48605C16.9382 8.37148 16.979 8.24532 16.9941 8.11486C17.0092 7.98441 16.9983 7.85225 16.962 7.72605C16.9261 7.59931 16.8654 7.48099 16.7833 7.37797C16.7013 7.27496 16.5995 7.18932 16.484 7.12605C16.2517 7.00204 15.9802 6.97319 15.727 7.04559C15.4738 7.11798 15.2587 7.28597 15.127 7.51405L10.77 15.355L7.708 12.293C7.61518 12.1999 7.50482 12.126 7.3833 12.0757C7.26179 12.0255 7.13151 11.9997 7 12Z"
+              fill="#00B071" />
+            <circle cx="12" cy="12" r="11.5" stroke="#00B071" />
+          </svg>Up to 5 keywords per campaign</p>
+      </div>
+      <div class="card mb-4 pb-5 col-xs-12 card-height box-shadow sr-bottom">
+
+        <h4 class="price-plan">Premium</h4>
+        <p class="plan-clients">For Pros</p>
+
+        <div class="card-body">
+          <h5 class="card-title pricing-card-title"><sup class="text-muted">US</sup>$3</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="text-muted">Per user Per Month billed <br>anually</li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-primary d-block mx-auto btn-start px-4">Coming soon</button>
+        </div>
+      </div>
+      <div class="card mb-4 pb-5 col-xs-12 card-height box-shadow sr-right">
+
+        <h4 class="price-plan">Business</h4>
+        <p class="plan-clients">For Team</p>
+
+        <div class="card-body">
+          <h5 class="card-title pricing-card-title"><sup class="text-muted">US</sup>$5</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li class="text-muted">Per user Per Month billed <br>anually</li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-primary d-block mx-auto btn-start px-4">Coming soon</button>
+        </div>
+      </div>
+    </div>
+    <!--------------- cards end------------------->
+  </div>
+  <!--------------- pricing end------------------->
+  <!--------------- testimonial start------------------->
+  <a class="anchor" id="testimonials"></a>
+  <div class="container-fluid testimonial-wrapper">
+    <h3 class="section__heading mt-5 mb-3">Testimonials</h3>
+    <div class="testimonial__slider">
+      <div class="d-flex justify-content-between">
+        <div style="width: 50%;" class="align-self-center">
+          <h5 class="text-resize">“With Crenly, we’ve seen a <b>30% revenue growth</b> over quarter and now we rolling
+            it out across the entire
+            customer lifestlye.”</h5>
+          <p class="">Abam Maxwell. C.M.O</p>
+          <img class="img-fluid" width="100px" src="assets/img/clientcompany.png" alt="">
+        </div>
+        <div>
+          <img class="img-fluid testimonial__img" src="assets/img/testimoniallady.png" alt="">
+          <p class="client__greet">Hi, I’m Abam Maxwell</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div style="width: 50%;" class="align-self-center">
+          <h5 class="text-resize">“With Crenly, we’ve seen a <b>30% revenue growth</b> over quarter and now we rolling
+            it out across the entire
+            customer lifestlye.”</h5>
+          <p class="">Abam Maxwell. C.M.O</p>
+          <img class="img-fluid" width="100px" src="assets/img/clientcompany.png" alt="">
+        </div>
+        <div>
+          <img class="img-fluid testimonial__img" src="assets/img/testimoniallady.png" alt="">
+          <p class="client__greet">Hi, I’m Abam Maxwell</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--------------- testimonial end------------------->
+  <!--------------- newsletter start------------------->
+  <div class="container-fluid newsletter d-flex">
+    <div class="align-self-center mx-auto">
+      <p class="newsletter__info">Subscribe to our news letter, we promise not to spam you.</p>
+      <form class="form-row justify-content-center">
+        <input type="email" class="form-control mb-2 mr-sm-2 col-7 col-lg-8" id="inlineFormInputName2"
+          placeholder="Email">
+        <button type="submit" class="btn btn-primary mb-2 send-email__btn">SEND</button>
+      </form>
+    </div>
+  </div>
+  <!--------------- newsletter end------------------->
+  <!--------------- footer start------------------->
+  <div class="container-fluid footer-wrapper d-flex justify-content-between">
+    <a id="brand-icon" class="navbar-brand my-3" href="#">crenly<span class="navbar-brand__dot">.</span>
+    </a>
+    <div class="my-4 d-flex align-items-center">
+      <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+        <path
+          d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+      </svg>
+      <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512">
+        <path
+          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+      </svg>
+      <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512">
+        <path
+          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+      </svg>
+      <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 576 512">
+        <path
+          d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+      </svg>
+    </div>
+  </div>
+  <!--------------- footer end------------------->
 
 
   <!-- Optional JavaScript -->
@@ -129,7 +274,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
     integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
     crossorigin="anonymous"></script>
-  <script src="assets/js/nav.js"></script>
+  <!-- Slick carousel -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- custom JS -->
   <script src="assets/js/script.js"></script>
 </body>
 
